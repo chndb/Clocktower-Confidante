@@ -1,8 +1,8 @@
 const canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d', { alpha: false });
 
-WIDTH = 1920;
-HEIGHT = 1080;
+WIDTH = 256;
+HEIGHT = 144;
 canvas.width = WIDTH;
 canvas.height = HEIGHT;
 
