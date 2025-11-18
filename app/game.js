@@ -71,8 +71,8 @@ testBounceLoaded = false;
 function testBounce() {
     if (!testBounceLoaded) {
         testImage = new Image();
-        testImage.src = 'assets/dvd-logo-png-7.png';
-        testSound = new Audio("assets/sonic-spring.mp3");
+        testImage.src = 'app/assets/dvd-logo-png-7.png';
+        testSound = new Audio("app/assets/sonic-spring.mp3");
         testBounceLoaded = true;
         iTestBounce = percX(0);
         jTestBounce = percY(0);
