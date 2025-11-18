@@ -13,7 +13,7 @@ let grimBG;
 function drawGame() {
   if (!grimBGLoaded) {
         grimBG = new Image();
-        grimBG.src = './assets/grid.png';
+        grimBG.src = './assets/grim.png';
         grimBGLoaded = true;
     }
     if (grimBG.complete) {
