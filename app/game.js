@@ -41,7 +41,9 @@ function genFrame() {
 
     context.translate(borderX, borderY);
 
-    testBounce();
+    drawGame();
+    
+    //testBounce();
 
     stage.style.transformOrigin = "0 0";
     stage.style.transform = `scale(${scaleToFit})`;
