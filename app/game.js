@@ -27,26 +27,9 @@ borderY = 0;
 function genFrame() {
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    stage.width = window.innerWidth;
-    stage.height = window.innerHeight;
-    scaleX = window.innerWidth / WIDTH;
-    scaleY = window.innerHeight / HEIGHT;
-    scaleToFit = Math.floor((Math.min(scaleX, scaleY)) * 1000) / 1000;
-    borderX = Math.floor((stage.width / scaleToFit - WIDTH) / 2);
-    borderY = Math.floor((stage.height / scaleToFit - HEIGHT) / 2);
-    borderX = borderX == 0 ? 0 : borderX + 1;
-    borderY = borderY == 0 ? 0 : borderY + 1;
-    canvas.width = WIDTH + borderX * 2;
-    canvas.height = HEIGHT + borderY * 2;
-
-    context.translate(borderX, borderY);
-
     drawGame();
     
     //testBounce();
-
-    stage.style.transformOrigin = "0 0";
-    stage.style.transform = `scale(${scaleToFit})`;
 }
 
 function soundReady(readySound) {
